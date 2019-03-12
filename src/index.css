@@ -1,14 +1,72 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-aqua {
+  background: rgba(0, 255, 255, 0.8);
+}
+
+.overlay {
+  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  /* moving on the y axis, 100% upwards */
+  /* transform: translateY(-100%) */
+}
+
+.highlight {
+  padding-bottom: 0.25em;
+  white-space: nowrap;
+}
+
+.highlight:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.highlight-pink:before {
+  background-color: #ff00e6;
+}
+
+.highlight-blue:before {
+  background-color: #0525ff;
+}
+
+.highlight-aqua:before {
+  height: 14px;
+  /* background-image: url('../images/zigzag.svg'); */
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+}
+
+.highlight-yellow:before {
+  height: 10px;
+  /* background-image: url('../images/wave.svg'); */
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+}
+
+@media (min-width: 480px) {
+  .m-auto-ns {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 120px;
+  }
 }
