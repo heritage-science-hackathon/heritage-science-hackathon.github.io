@@ -4,35 +4,40 @@ const menu = [
   {
     children: 'About',
     className: 'order-1-ns w-20',
-    href: 'about'
+    href: '#about'
   },
   {
-    children: 'Call for ideas',
+    children: 'At a Glance',
     className: 'order-2-ns w-20',
-    href: 'ideas'
+    href: '#glance'
+  },
+  {
+    children: 'Details',
+    className: 'order-2-ns w-20',
+    href: '#details'
+  },
+  {
+    children: 'Call for Ideas',
+    className: 'order-3-ns w-20',
+    href: '#ideas'
   },
   {
     children: 'Tickets',
-    className: 'order-2-ns w-20',
-    href: 'tickets'
-  },
-  {
-    children: 'Map',
-    className: 'order-3-ns w-20',
-    href: 'journal'
+    className: 'order-4-ns w-20',
+    href: '#tickets'
   },
   {
     children: 'Contact',
     className: 'order-4-ns w-20',
-    href: 'contact'
+    href: '#contact'
   }
 ];
 
 
-const NavItem = ({className, myRef, logo, children}) => (
+const NavItem = ({className, href, logo, children}) => (
   <li className={`mh2-ns f6 f4-l tc ${className}`}>
-    <a className="white no-underline" ref={myRef}>
-      {logo ? <img src="../images/logo.svg" className="db center logo" /> : children}
+    <a className="white no-underline" href={href}>
+      {children}
     </a>
   </li>
 );
@@ -40,7 +45,6 @@ const NavItem = ({className, myRef, logo, children}) => (
 class Nav extends Component {
   constructor(props) {
     super(props)
-    this.myRef = React.createRef()
   }
   render () {
     return (
@@ -52,6 +56,5 @@ class Nav extends Component {
     )
   }
 }
-
 
 export default Nav

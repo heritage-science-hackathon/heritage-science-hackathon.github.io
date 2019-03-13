@@ -5,6 +5,7 @@
   "homepage": "https://heritage-science-hackathon.github.io/about",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "google-maps-react": "^2.0.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"

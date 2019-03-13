@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Nav from './Nav'
 import Intro from './Intro'
 import InfoBlock from './Info'
+import MapContainer from './Map'
 import computer from './images/computer.jpeg'
-// import foo from './data/information.js'
+
 
 import './App.css';
 
 class App extends Component {
-  debugger
   render() {
     return (
       <div className="App">
-        <div className="side-image fixed vh-100 w-50 dn-m overflow-hidden">
-          <img className="dn-m w-100" src={computer} />
+        <div className="side-image fixed vh-100 w-50 dn-m dn-s overflow-hidden">
+          <img className="dn-m dn-s" src={computer} />
         </div>
         <div className="min-vh-100 w-50-l relative flex flex-column ml-auto">
           <Nav />
@@ -24,6 +23,7 @@ class App extends Component {
               <InfoBlock {...block} />  
             )}
           </div>
+          <MapContainer />
         </div>
       </div>
     );
@@ -41,7 +41,7 @@ const information = [
     p2: "Open to:       All",
     p3: "Cost:      Free",
     p4: "Location:      The Auditorium, UCL at Here East, Queen Elizabeth Olympic Park, London, E20 3BS",
-    link: 'glance',
+    id: 'glance',
     className: 'info-one'
   },
   {
@@ -52,7 +52,7 @@ const information = [
       "Saturday the fun really kicks in. We will start in the morning with a group formation and then, its up to you! After group formation we will run a couple of workshops which may help you with your project proposals such as website building tools tips and tricks and how to use sketchfab. In teams you will work on different ways to address issues posed on the Friday evening.  We can’t stress enough at this point, there are no wrong answers! You can design an exhibition, build and app or website, develop a 3D model or plan and education outreach box and curriculum. Think outside the box!",
     p3: 
       "Sunday will carry on the good work, but at about 3.30 we will ask you to wrap things up. At the end of the day we will ask each team to present their projects to the rest of the group and followed by a prizegiving, networking and (of course) drinks.",
-    link: 'about',
+    id: 'details',
     className: 'info-two'
   },
   {
@@ -60,25 +60,19 @@ const information = [
     p1:
       'The Heritage Science Hackathon will be a weekend of working on creatively solving issues faced by small-medium sized heritage institutions in East London. Does your organisation face any issues that could benefit from a fresh perspective? We welcome more than one suggestion, and are open to discussing and developing ideas further with you. This is an opportunity to have a highly multidisciplinary team to work on issues faced by your organisation.',
     p2: 'Themes: Digitisation, Curation, Educational Outreach',
-    link: 'call',
+    id: 'ideas',
     className: 'info-three'
   },
   {
     title: 'Tickets',
     p1: 'Tickets will be available via out eventbrite page in the coming days.',
-    link: 'tickets',
+    id: 'tickets',
     className: 'info-four'
-  },
-  {
-    title: 'Map',
-    p1: '',
-    link: 'map',
-    className: 'info-five'
   },
   {
     title: 'Contact',
     p1: 'ida.ahmad.17@ucl.ac.uk',
-    link: 'contact',
-    className: 'info-six'
+    id: 'contact',
+    className: 'info-five'
   }
 ]
