@@ -7,7 +7,7 @@ class Intro extends Component {
   }
   render () {
     return (
-      <div className="m-auto-ns f4 f3-m f3-l tc w-80-l normal">
+      <div className="m-auto-ns f4 f3-m f3-l tc w-80-l normal pb5">
         <h1>&lt; Heritage Science Hackathon /&gt;</h1>
         <div className="f4 f3-m f3-l mb3 mb4-ns">
           Join us at Here East for a Heritage Science Hackathon. Team up with a broad range of heritage professionals, early career researchers, programmers and students to work on issues faced by local heritage institutions. 

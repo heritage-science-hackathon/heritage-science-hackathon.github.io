@@ -31,3 +31,32 @@
     transform: rotate(360deg);
   }
 } */
+
+.info-one {
+  background: #1b1e6c;
+}
+
+.info-two {
+  background: #fcff60;
+  color: #1b1e6c;
+}
+
+.info-three {
+  background: #e73030;
+  color: #fcff60;
+}
+
+.info-four {
+  background: #95ef43;
+  color:  #e73030;
+}
+
+.info-five {
+  background: #7137cc;
+  color: #95ef43;
+}
+
+.info-six {
+  background: #fd3dff;
+  color: #7137cc;
+}

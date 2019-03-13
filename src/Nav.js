@@ -4,34 +4,34 @@ const menu = [
   {
     children: 'About',
     className: 'order-1-ns w-20',
-    href: 'about.html'
+    href: 'about'
   },
   {
     children: 'Call for ideas',
     className: 'order-2-ns w-20',
-    href: 'ideas.html'
+    href: 'ideas'
   },
   {
     children: 'Tickets',
     className: 'order-2-ns w-20',
-    href: 'tickets.html'
+    href: 'tickets'
   },
   {
     children: 'Map',
     className: 'order-3-ns w-20',
-    href: 'journal.html'
+    href: 'journal'
   },
   {
     children: 'Contact',
     className: 'order-4-ns w-20',
-    href: 'contact.html'
+    href: 'contact'
   }
 ];
 
 
-const NavItem = ({className, href, logo, children}) => (
+const NavItem = ({className, myRef, logo, children}) => (
   <li className={`mh2-ns f6 f4-l tc ${className}`}>
-    <a className="white no-underline" href={href}>
+    <a className="white no-underline" ref={myRef}>
       {logo ? <img src="../images/logo.svg" className="db center logo" /> : children}
     </a>
   </li>
@@ -40,6 +40,7 @@ const NavItem = ({className, href, logo, children}) => (
 class Nav extends Component {
   constructor(props) {
     super(props)
+    this.myRef = React.createRef()
   }
   render () {
     return (
