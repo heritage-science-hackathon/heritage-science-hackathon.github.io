@@ -2,7 +2,7 @@
   "name": "hsh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://heritage-science-hackathon.github.io",
+  "homepage": "https://heritage-science-hackathon.github.io/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "google-maps-react": "^2.0.2",
