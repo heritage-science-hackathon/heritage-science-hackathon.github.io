@@ -3,32 +3,32 @@ import React, { Component } from 'react';
 const menu = [
   {
     children: 'About',
-    className: 'order-1-ns w-20',
+    className: 'order-1-ns',
     href: '#about'
   },
   {
     children: 'At a Glance',
-    className: 'order-2-ns w-20',
+    className: 'order-2-ns',
     href: '#glance'
   },
   {
     children: 'Details',
-    className: 'order-2-ns w-20',
+    className: 'order-2-ns',
     href: '#details'
   },
   {
     children: 'Call for Ideas',
-    className: 'order-3-ns w-20',
+    className: 'order-3-ns',
     href: '#ideas'
   },
   {
     children: 'Tickets',
-    className: 'order-4-ns w-20',
+    className: 'order-4-ns',
     href: '#tickets'
   },
   {
     children: 'Contact',
-    className: 'order-4-ns w-20',
+    className: 'order-4-ns',
     href: '#contact'
   }
 ];
