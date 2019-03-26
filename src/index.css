@@ -12,15 +12,6 @@ body {
   margin-right: auto;
 }
 
-.bg-aqua {
-  background: rgba(0, 255, 255, 0.8);
-}
-
-.overlay {
-  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  /* moving on the y axis, 100% upwards */
-  /* transform: translateY(-100%) */
-}
 
 .highlight {
   padding-bottom: 0.25em;
@@ -47,14 +38,12 @@ body {
 
 .highlight-aqua:before {
   height: 14px;
-  /* background-image: url('../images/zigzag.svg'); */
   background-repeat: repeat-x;
   background-position-y: bottom;
 }
 
 .highlight-yellow:before {
   height: 10px;
-  /* background-image: url('../images/wave.svg'); */
   background-repeat: repeat-x;
   background-position-y: bottom;
 }
