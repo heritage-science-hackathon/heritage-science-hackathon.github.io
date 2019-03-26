@@ -1,7 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
 
+.side-image img {
+  object-fit: cover;
+}
 .info-one {
   background: #1b1e6c;
 }
@@ -16,12 +24,12 @@ html {
   color: #fcff60;
 }
 
-.info-four {
+.info-four, .info-four a {
   background: #95ef43;
   color:  #e73030;
 }
 
-.info-five {
+.info-five, .info-five a {
   background: #7137cc;
   color: #95ef43;
 }
@@ -33,7 +41,7 @@ html {
 
 @media (min-width: 480px) {
   .dn-s {
-    /* dissplay: none; */
+    display: none;
   }
 }
 
