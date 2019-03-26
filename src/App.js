@@ -49,7 +49,7 @@ const information = [
     p1:
       "Join us on Saturday morning for introductions and canapes. Participating museums will present the issues that they are facing and you can think about how to solve their issues.",
     p2:
-      "Then the fun really kicks in. We will start after a break with a group formation excercise and then, its up to you! After lunch we will run a couple of workshops which may help you with your project proposals such as website building tools, tips and tricks and how to use sketchfab. In teams you will work on different ways to address issues posed on the Friday evening.  We can’t stress enough at this point, there are no wrong answers! You can design an exhibition, build and app or website, develop a 3D model or plan and education outreach box and curriculum. Think outside the box!",
+      "Then the fun really kicks in. We will start after a break with a group formation excercise and then, its up to you! After lunch we will run a couple of workshops which may help you with your project proposals such as website building tools, tips and tricks and how to use sketchfab. In teams you will work on different ways to address issues posed in the morning.  We can’t stress enough at this point, there are no wrong answers! You can design an exhibition, build and app or website, develop a 3D model or plan and education outreach box and curriculum. Think outside the box!",
     p3: 
       "Sunday will carry on the good work, but at about 3.30 we will ask you to wrap things up. At the end of the day we will ask each team to present their projects to the rest of the group and followed by a prizegiving, networking and (of course) drinks.",
     id: 'details',
